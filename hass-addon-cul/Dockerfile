@@ -8,7 +8,8 @@ ADD package.json /
 RUN \ 
     apk add --no-cache \
         nodejs \
-        npm
+        npm && \
+    npm install
 
 RUN npm install -g cul2mqtt
 
