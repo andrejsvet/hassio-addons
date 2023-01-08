@@ -11,8 +11,6 @@ RUN \
         npm && \
     npm install
 
-RUN npm install -g cul2mqtt
-
 # Copy data for add-on
 COPY run.sh /
 # COPY index.js /
