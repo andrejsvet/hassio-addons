@@ -7,10 +7,9 @@ ADD package.json /
 
 
 RUN \ 
-    apt-get update \
-    \
-    && apt-get install nodejs npm \
-    && apt-get -y clean
+    apk add --no-cache \
+        nodejs \
+        npm
 
 # Copy data for add-on
 COPY run.sh /
