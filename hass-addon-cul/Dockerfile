@@ -9,7 +9,7 @@ RUN \
     apk add --no-cache \
         nodejs \
         npm && \
-    npm install
+    npm install -g cul2mqtt
 
 # Copy data for add-on
 COPY run.sh /
